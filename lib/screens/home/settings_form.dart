@@ -43,7 +43,11 @@ class _SettingsFormState extends State<SettingsForm> {
             }).toList(),
             onChanged: (val) => setState(() => _currentSugars = val),
           ),
-          SizedBox(height: 10.0),
+          SizedBox(height: 20.0),
+          Text(
+            'Brew strength',
+            style: TextStyle(fontSize: 16.0),
+          ),
           Slider(
             value: (_currentStrength ?? 100).toDouble(),
             activeColor: Colors.brown[_currentStrength ?? 100],
